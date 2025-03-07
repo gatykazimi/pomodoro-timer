@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="coustard-regular">
+            Study Time!
+        </h1>
+    </div>
+    <div class="circle">
+        <div class="timer-circle coustard-regular" id="timer">
+            <h2>15:00</h2>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <div class="box">
+            <div class="button coustard-regular" onclick="togglePauseResume()">
+                Start
+            </div>
+        </div>
+        <div class="box">
+            <div class="button coustard-regular" onclick="restartTimer()">
+                Reset
+            </div>
+        </div>
+
+
+    </div>
+    <div class="button coustard-regular" id="change" onclick="openPopup()">
+        Change Time
+    </div>
+    <div class="popup" id="popup">
+        <div class="pop-content">
+            <div class="pop-box">
+                <div class="study">
+                    <h2 class="coustard-regular">Study Time</h2>
+                    <div class="display">
+                        <input type="text" id="study-time" placeholder="15:00" required="required" class="coustard-regular"/>
+                        
+                    </div>
+                </div>
+                <div class="break coustard-regular">
+                    <h2 class="coustard-regular">Break Time</h2>
+                    <div class="display">
+                        <input type="text" id="break-time" placeholder="5:00" required="required" class="coustard-regular"/>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="button coustard-regular" id="confirm" onclick="confirmTime()">
+                Confirm
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

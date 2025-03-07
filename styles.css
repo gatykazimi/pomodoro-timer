@@ -1,0 +1,157 @@
+.coustard-regular {
+    font-family: "Coustard", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+  background-color: #fff8ef;
+}
+h1{
+  color: #8f85c6;
+  text-align: center; 
+  font-family: "Coustard", serif;
+}
+
+h2{
+  color: #8f85c6;
+  font-family: "Coustard", serif;
+}
+
+.header{
+  padding: 10px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+
+
+.circle{
+  border: 8px solid #8f85c6;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timer {
+  font-size: 35px;
+  font-weight: bold;
+  color: #8f85c6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+
+.buttons{
+  padding: 40px;
+  display: flex;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+}
+
+ .button{
+  background-color: #8f85c6;
+  color: #fff8ef;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 25px;
+ }
+
+ #change{
+  display: flex;
+  margin: auto;
+  width: 300px;
+  justify-content: center;
+ }
+
+.button:hover{
+  background-color:#cdc7ed;
+  color: #8f85c6;
+  border-color: #8f85c6;
+  border: 5px solid #8f85c6;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  width: 220px;
+}
+
+/*POPUP*/
+
+.popup{
+  width: 50%;
+  margin:auto;
+  border-radius: 20px;
+  background-color: #cdc7ed;
+  z-index: 1;
+  justify-content: center;
+  transform: translate(0, -150%);
+  padding: 20px;
+  display: none;
+}
+
+.pop-content{
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+}
+
+.pop-box{
+  display: flex;
+  font-size: 20px;
+  width: 80%;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 0;
+  margin:auto;
+}
+
+.study, .break{
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.display{
+  background-color: #fff8ef;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  text-align:center;
+  font-size: 30px;
+  border-radius: 20px;
+  width: 80%
+}
+
+#confirm{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input{
+  width: 60%;
+  text-align: center;
+  background-color: #fff8ef;
+  border: none;
+  font-size: 30px;
+}
